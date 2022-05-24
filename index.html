@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 
@@ -6,12 +6,63 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
+
+    <script src="https://kit.fontawesome.com/8c15c7654b.js" crossorigin="anonymous"></script>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ARGENTRAVEL</title>
 </head>
 <body>
-    
+    <main class="main">
+
+    <div class="navbar">
+
+            <label for="menu__toggle">
+                <div class="menu__boton">
+                    <i class="fas fa-bars "></i>
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                </div>
+             </label>
+
+        <input id="menu__toggle" class="menu__toggle" type="checkbox" >
+            <div class="menu__enlaces">
+           
+                <a href="#" >Home</a>
+                <a href="#" >Paisajes & Tours</a>
+                <a href="#" >Contacto</a>
+                <a href="login.html" > Login  </a>
+                
+            </div>
+                 
+    </div>
+
+ 
+
+
+
+    <h1 class="main__titulo centrar">Explora tu viaje ideal </h1>
+    <h2 class="main__subtitulo centrar">Te llevamos a los  mejores Parques nacionales argentinos </h2>
+
+
+    <div class="contacto">
+        <h1 class="centrar">contacto</h1>
+      
+        <form action="" class="formulario">
+            <label for="nombre">Nombre </label>
+          <input class="formulario__campo" id="nombre" type="text" placeholder="nombre" required>
+           <label for="phone">Telefono</label>
+          <input class="formulario__campo" type="number" id="phone" placeholder="telefono" required>
+
+          <textarea name="Mensaje" id="mensaje" cols="30" rows="10" class="formulario__campo" placeholder="su mensaje " required></textarea>
+        
+          <input class="formulario__campo--consultar formulario__campo " type="submit" value="Consultar" >  
+        
+        </form>
+    </div>
+</main>
+
 </body>
 </html>

@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;800&display=swap');
+
+:root{
+    --fontF:'Sora', sans-serif;
+    --fontWeightH1:800;
+    --fontWeightH2:500;
+    --fontWeightp:300;
+    
+}
+/* Utilidades  */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+     }
+body { font-size: 1.6rem; }
+ * {  
+   margin: 0;
+   padding: 0;
+   font-family: var(--fontF);
+   color: white;
+   }
+
+ /* quitamos flechas de input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.centrar{
+  text-align: center;
+}
+/* Inicializacion  */
+h1{
+  font-weight: var(--fontWeightH1);
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+h2{
+ 
+  font-weight: var(--fontWeightH2);
+  font-size: 3rem;
+}
+a,p{
+  font-size: 2.5rem;
+}
+
+/* Navbar */
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  
+ 
+  
+}
+/* Menu Burger */
+.menu__boton{
+  text-align: right;
+  margin:0 auto;
+  padding:3rem 3rem 0rem 0rem;
+  font-size: 3rem;
+  position: fixed;
+  left: 90%;
+
+}
+
+.menu__enlaces, .menu__toggle{ display: none;}
+
+#menu__toggle:checked  ~  .menu__enlaces { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 8rem;
+  right: 0;
+  left: 0;
+ 
+  background: rgba(0, 0, 0, .9);
+  
+  
+}
+
+
+.menu__enlaces a{
+  padding: 2rem 0 2rem 0;
+  text-decoration: none;
+  
+}   
+
+
+/* Pagina Inicio */
+
+.main{
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  
+}
+.main__titulo{
+   width: 80%;
+   margin: auto;
+   padding: 30rem 0rem 2rem 0rem;
+  
+}
+
+/* Seccion contacto */
+
+.contacto{
+  margin-top: 40rem;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+}
+.formulario__campo{
+  background-color: rgba(0, 0, 0, .8);
+  color: rgba(255,255,255,1);
+  font-size: 3rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem 1rem;
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mensaje{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.formulario__campo--consultar{
+  margin-top:2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 5rem;
+}
+

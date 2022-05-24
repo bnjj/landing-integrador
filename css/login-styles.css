@@ -1,0 +1,117 @@
+/* Fuente */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;800&display=swap');
+
+/* Definición de Variables */
+
+:root{
+    --ColorInicio:rgb(255,128,128);
+    --ColorFinal:rgb(71,47,93);
+    --ColorFuente:rgb(255,255,255);
+    --Fuente:'Sora', sans-serif;
+}
+/* Quita border-radius agregado por el navegador */
+input {
+    border-radius: 0;
+  }
+  
+  input[type="search"] {
+    -webkit-appearance: none;
+  }
+
+/*Colores +  1rem = 10px  */
+html { min-height: 100%;
+    font-size:62.5%;}
+
+body{
+    font-size: 1.6rem; 
+    color: var(--ColorFuente);
+   background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;   
+    font-family: var(--Fuente);
+  
+}
+/* Tamaño y formato texto */
+h1,p{
+    padding: 0px;
+    margin: 0px;
+    
+}
+h1{font-size: 5.5rem;}
+p,a {
+    font-size: 2.5rem;
+    font-weight:100;
+}
+
+/* Estilo de login */
+.login{ 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15rem;
+}
+/* Formulario */
+.formulario{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+}
+/* Campos de Formulario */
+.formulario__campo:first-of-type{
+    border-bottom: 0.1rem rgba(255, 255, 255, 0.3) solid;
+}
+.formulario__campo{ 
+    background-color: rgba(0, 0, 0, .8);
+    color:  rgba(255, 255, 255, 1);
+    padding:2rem 2rem;
+    border: 0;
+    font-weight: 200;}
+.formulario__campo--last{border-top: 0.1rem rgba(255, 255, 255, 0.3) solid;}
+
+.formulario__campo:focus{
+   /* Visible in the full-colour space */
+   transition: all   0.2s;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5); 
+   /* Visible in Windows high-contrast themes */
+   outline-color: transparent;
+   outline-width: 2px;
+   outline-style: dotted;
+}
+
+/* Boton */
+.formulario__btn{
+    margin-top: 5rem;
+    border: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: var(--ColorFuente);
+    padding: 2rem 0rem;
+    font-weight: 200;
+}
+
+
+/*Texto y  Enlace inferior en login */
+.signIn{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.enlace{
+    text-decoration: none;
+    color: yellow; 
+    
+}
+
+.anim{
+    animation: fadeIn ease-in 2s;   
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
