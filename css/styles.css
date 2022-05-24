@@ -132,8 +132,14 @@ a,p{
 /* Seccion tours */
 .tours{
   background-image:url(../img/bg1.jpg);
-  background-size: contain;
-  height: 100%;
+  background-size: cover;
+ background-position: center;
+}
+.torus__subtitulo{
+  padding-bottom: 5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .parque{
@@ -184,6 +190,7 @@ background-repeat: no-repeat;
 
 .parque__texto{
   width:90%;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
 
