@@ -75,12 +75,15 @@ a,p{
 }
 /* Menu Burger */
 .menu__boton{
-  text-align: right;
-  margin:0 auto;
-  padding:3rem 3rem 0rem 0rem;
+ 
+  margin:3rem 3rem 0rem 0rem;
   font-size: 3rem;
   position: fixed;
   left: 90%;
+
+
+  
+
 
 }
 
