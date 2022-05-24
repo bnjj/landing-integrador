@@ -10,6 +10,8 @@
 }
 /* Utilidades  */
 
+ /* Enable smooth scrolling on the whole document*/
+ html {scroll-behavior: smooth;}
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -112,14 +114,48 @@ a,p{
   background-image: url("../img/bg.jpg");
   background-size: cover;
   min-height: 100vh;
-  
+
 }
 .main__titulo{
    width: 80%;
    margin: auto;
    padding: 30rem 0rem 2rem 0rem;
-  
 }
+.main__subtitulo{
+  margin-bottom: 50rem;
+}
+/* Seccion tours */
+.tours{
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: rgba(0, 0, 0, .8);
+}
+.parque{margin-top: 10rem;}
+.parque__img{
+  background-image: url(../img/iguazu.jpg);
+  height:50rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.parque__img--iguazu{background-image: url(../img/iguazu.jpg);}
+.parque__img--los-glaciares{background-image: url(../img/los-glaciares.JPG);}
+.parque__img--nahuel-huapi{background-image: url(../img/nahuel-huapi.jpg);}
+.parque__img--tierra-del-fuego{background-image: url(../img/tierra-del-fuego.jpg);}
+.parque__img--lago-puelo{background-image: url(../img/lago-puelo.jpg);}
+
+.parque__texto{margin-bottom: 10rem;}
+
+.btn__contacto{
+  margin: 10rem;
+  text-decoration: none;
+  padding: 2rem 2rem ;
+  background-color: rgba(0, 0, 0, 1);
+  border: 3px solid white;
+}
+
 
 /* Seccion contacto */
 
