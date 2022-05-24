@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;800&display=swap');
 
+
 :root{
     --fontF:'Sora', sans-serif;
     --fontWeightH1:800;
@@ -113,11 +114,12 @@ a,p{
 
 /* Pagina Inicio */
 
-.main{
+.homepage{
   background-image: url("../img/bg.jpg");
   background-size: cover;
-  min-height: 100vh;
-
+  background-repeat: no-repeat;
+  min-height: 100%;
+  padding-bottom: 10rem;
 }
 .main__titulo{
    width: 80%;
@@ -129,60 +131,101 @@ a,p{
 }
 /* Seccion tours */
 .tours{
-  padding: 2rem 0rem 2rem 0rem;
-  background-color: rgba(0, 0, 0, .8);
+  background-image:url(../img/bg1.jpg);
+  background-size: contain;
+  height: 100%;
 }
-.parque{margin-top: 10rem;}
+
+.parque{
+width: 100%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.parque__opaco{
+  background: rgba(0, 0, 0, .8);
+  height: 100%;
+  padding: 15rem 0rem 15rem 0rem;
+  
+}
+
+
+.parque__titulo{
+  margin: 0rem 0rem 10rem 0rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .parque__img{
-  background-image: url(../img/iguazu.jpg);
   height:50rem;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
+
+
+.parque__bg--iguazu{background-image: url(../img/iguazu.jpg);}
+.parque__bg--los-glaciares{background-image: url(../img/los-glaciares.JPG);}
+.parque__bg--nahuel-huapi{background-image: url(../img/nahuel-huapi.jpg);}
+.parque__bg--tierra-del-fuego{background-image: url(../img/tierra-del-fuego.jpg);}
+.parque__bg--lago-puelo{background-image: url(../img/lago-puelo.jpg);}
+
 .parque__img--iguazu{background-image: url(../img/iguazu.jpg);}
 .parque__img--los-glaciares{background-image: url(../img/los-glaciares.JPG);}
 .parque__img--nahuel-huapi{background-image: url(../img/nahuel-huapi.jpg);}
 .parque__img--tierra-del-fuego{background-image: url(../img/tierra-del-fuego.jpg);}
 .parque__img--lago-puelo{background-image: url(../img/lago-puelo.jpg);}
 
-.parque__texto{margin-bottom: 10rem;}
+.parque__texto{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 5rem;}
 
 .btn__contacto{
-  margin: 10rem;
+  margin:10rem;
   text-decoration: none;
   padding: 2rem 2rem ;
   background-color: rgba(0, 0, 0, 1);
-  border: 3px solid white;
+  border: 2px solid white;
 }
 
 
 /* Seccion contacto */
 
 .contacto{
-  margin-top: 40rem;
+  background-image: url("../img/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 28rem;
 }
 .formulario{
   display: flex;
   flex-direction: column;
 }
 .formulario__campo{
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 1);
   color: rgba(255,255,255,1);
   font-size: 3rem;
-  border-radius: 1rem;
-  border: none;
+  opacity: 1;
+  border: 1px solid white;
   padding: 1rem 1rem;
-
+margin: 0.3rem 0rem;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 #mensaje{
-  margin-top: 2rem;
+  
   margin-bottom: 2rem;
 }
 
@@ -191,4 +234,16 @@ a,p{
   padding: 1rem 2rem;
   margin-bottom: 5rem;
 }
+/* ACOMODAR ESTA PARTE */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.8; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
