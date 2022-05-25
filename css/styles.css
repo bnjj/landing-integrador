@@ -153,13 +153,12 @@ background-repeat: no-repeat;
 .parque__opaco{
   background: rgba(0, 0, 0, .8);
   height: 100%;
-  padding: 15rem 0rem 15rem 0rem;
+  padding: 5rem 0rem 5rem 0rem;
   
 }
 
-
 .parque__titulo{
-  margin: 0rem 0rem 10rem 0rem;
+  margin: 0rem 0rem 5rem 0rem;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -167,14 +166,13 @@ background-repeat: no-repeat;
 
 .parque__img{
   height:50rem;
-  width: 95%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .parque__bg--iguazu{background-image: url(../img/iguazu.jpg);}
 .parque__bg--los-glaciares{background-image: url(../img/los-glaciares.JPG);}
@@ -193,9 +191,8 @@ background-repeat: no-repeat;
   margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
-
-  margin-bottom: 5rem;}
-
+  margin-bottom: 5rem;
+}
 .btn__contacto{
   margin:10rem;
   text-decoration: none;
@@ -203,8 +200,6 @@ background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 1);
   border: 2px solid white;
 }
-
-
 /* Seccion contacto */
 
 .contacto{
@@ -220,27 +215,27 @@ background-repeat: no-repeat;
 }
 .formulario__campo{
   background-color: rgba(0, 0, 0, 1);
-  color: rgba(255,255,255,1);
   font-size: 3rem;
-  opacity: 1;
   border: 1px solid white;
-  padding: 1rem 1rem;
-margin: 0.3rem 0rem;
+  padding: 1rem 2rem ;
+  margin: 0.3rem 0rem;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#mensaje{
-  
-  margin-bottom: 2rem;
-}
+#mensaje{margin-bottom: 2rem;}
 
 .formulario__campo--consultar{
   margin-top:2rem;
   padding: 1rem 2rem;
   margin-bottom: 5rem;
 }
+
+
+
+
+
 /* ACOMODAR ESTA PARTE */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
@@ -253,4 +248,16 @@ margin: 0.3rem 0rem;
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
+}
+
+/* Footer Icons */
+.footer{
+  background-color: black;
+}
+.footer__icons{
+  text-align: center;
+  font-size: 3rem;
+  width: 30%;
+  height: 30%;
+  
 }
