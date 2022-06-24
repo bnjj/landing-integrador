@@ -131,8 +131,9 @@ a,p{
 .tours{
   background: rgba(0, 0, 0, .8);
   background-image:url(../img/bg1.jpg);
-  background-size: contain;
+  background-size: cover;
  background-position: center;
+ background-repeat: no-repeat;
 }
 .torus__subtitulo{
   padding-bottom: 5rem;
@@ -140,12 +141,12 @@ a,p{
   margin-left: auto;
   margin-right: auto;
 }
-
+         
 .parque{
 width: 100%;
 background-size: cover;
 background-position: center;
-background-repeat: no-repeat;
+background-repeat: no-repeat;                                  
 
 }
 
