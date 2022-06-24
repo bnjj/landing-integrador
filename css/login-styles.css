@@ -118,7 +118,7 @@ p,a {
 }
 
 .anim{
-    animation: fadeIn ease-in 2s;   
+    animation: fadeIn ease-in 0.5s;   
 }
 @keyframes fadeIn {
   0% {opacity:0;}

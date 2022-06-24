@@ -82,10 +82,6 @@ a,p{
   position: fixed;
   left: 90%;
 
-
-  
-
-
 }
 
 .menu__enlaces, .menu__toggle{ display: none;}
@@ -120,6 +116,8 @@ a,p{
   background-repeat: no-repeat;
   min-height: 100%;
   padding-bottom: 10rem;
+  margin-bottom: 0rem;
+  
 }
 .main__titulo{
    width: 80%;
@@ -131,8 +129,9 @@ a,p{
 }
 /* Seccion tours */
 .tours{
+  background: rgba(0, 0, 0, .8);
   background-image:url(../img/bg1.jpg);
-  background-size: cover;
+  background-size: contain;
  background-position: center;
 }
 .torus__subtitulo{
@@ -154,6 +153,7 @@ background-repeat: no-repeat;
   background: rgba(0, 0, 0, .8);
   height: 100%;
   padding: 5rem 0rem 5rem 0rem;
+  
   
 }
 
@@ -232,11 +232,6 @@ background-repeat: no-repeat;
   margin-bottom: 5rem;
 }
 
-
-
-
-
-/* ACOMODAR ESTA PARTE */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 0.8; /* Firefox */
@@ -253,11 +248,46 @@ background-repeat: no-repeat;
 /* Footer Icons */
 .footer{
   background-color: black;
-}
-.footer__icons{
   text-align: center;
-  font-size: 3rem;
-  width: 30%;
-  height: 30%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:center ;
+}
+.footer i{
+
+  margin:2rem 5rem;
+  font-size:5rem
   
+ 
+  
+}
+
+
+
+@media (min-width: 992px) 
+{
+    .menu__boton{
+      display: none;
+    }
+    .menu__enlaces{
+      display: flex;
+      justify-content: space-around;
+      
+    }
+    .menu__enlaces a{
+      font-size: 3.2rem;
+    }
+    .menu__enlaces a:hover{
+      transition: all 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
+
+ 
+
+
+
+   
+
+
 }
